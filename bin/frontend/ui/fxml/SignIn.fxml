@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="pane_SignIn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-border-image-source: url('E:/eclipse_workspace/StudentManagerSubmission/images');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controller.signin.SignInController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffe5b3" height="30.0" layoutY="-1.0" strokeType="INSIDE" width="700.0">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="-3.0" prefHeight="35.0" prefWidth="332.0" text="Student Manager ——用户注册" textFill="#544444" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#433e3e" height="570.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Pane layoutX="50.0" layoutY="30.0" prefHeight="570.0" prefWidth="650.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eee8dd" height="570.0" strokeType="INSIDE" width="650.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#eee2cb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <TextField fx:id="name" layoutX="156.0" layoutY="75.0" prefHeight="36.0" prefWidth="107.0" />
+            <Label layoutX="102.0" layoutY="80.0" text="姓名：" />
+            <Label layoutX="298.0" layoutY="80.0" text="性别：" />
+            <Label layoutX="317.0" layoutY="140.0" text="手机/电话：" />
+            <Label layoutX="66.0" layoutY="200.0" text="家庭住址：" />
+            <Label layoutX="48.0" layoutY="260.0" text="联系人姓名：" />
+            <TextField fx:id="id" layoutX="156.0" layoutY="135.0" prefHeight="36.0" prefWidth="145.0" />
+            <TextField fx:id="phone" layoutX="415.0" layoutY="135.0" prefHeight="36.0" prefWidth="190.0" />
+            <TextField fx:id="homeAddress" layoutX="155.0" layoutY="195.0" prefHeight="36.0" prefWidth="449.0" />
+            <TextField fx:id="contactsName" layoutX="155.0" layoutY="255.0" prefHeight="36.0" prefWidth="128.0" />
+            <TextField fx:id="gender" layoutX="352.0" layoutY="75.0" prefHeight="36.0" prefWidth="68.0" />
+            <Label layoutX="62.0" layoutY="140.0" text="学号/工号：" />
+            <Label layoutX="444.0" layoutY="80.0" text="班级:" />
+            <TextField fx:id="classes" layoutX="492.0" layoutY="75.0" prefHeight="36.0" prefWidth="68.0" />
+            <Label layoutX="298.0" layoutY="260.0" text="联系人电话：" />
+            <TextField fx:id="contactsPhone" layoutX="407.0" layoutY="255.0" prefHeight="36.0" prefWidth="198.0" />
+            <Line endX="160.0" layoutY="55.0" stroke="#51403d" />
+            <Label layoutX="25.0" layoutY="20.0" text="基本信息">
+               <font>
+                  <Font name="Gadugi Bold" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="169.0" layoutY="380.0" stroke="#51403d" />
+            <Label layoutX="25.0" layoutY="336.0" text="账户信息">
+               <font>
+                  <Font name="Gadugi Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="404.0" text="用户名：" />
+            <TextField fx:id="username" layoutX="165.0" layoutY="398.0" prefHeight="36.0" prefWidth="170.0" />
+            <Label layoutX="102.0" layoutY="460.0" text="密码：" />
+            <Label layoutX="350.0" layoutY="404.0" text="(用户名只能包含英文和数字)" />
+            <Label layoutX="350.0" layoutY="460.0" text="(密码长度需大于等于6位)" />
+            <Button fx:id="button_submit" layoutX="182.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#SubmitInfo" prefHeight="43.0" prefWidth="72.0" text="提交" />
+            <Button fx:id="button_back" layoutX="338.0" layoutY="500.0" mnemonicParsing="false" onAction="#Back" prefHeight="43.0" prefWidth="68.0" text="返回" />
+            <PasswordField fx:id="password" layoutX="165.0" layoutY="454.0" prefHeight="36.0" prefWidth="170.0" />
+         	<Label fx:id="hint" layoutX="229.0" layoutY="366.0" prefHeight="21.0" prefWidth="220.0" textFill="#f50505" />
+            <Label fx:id="warning" layoutX="254.0" layoutY="26.0" prefHeight="24.0" prefWidth="314.0" textFill="#dd4e38" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controller.login.LoginController">
+   <top>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb81f" height="50.0" strokeType="INSIDE" width="410.0" BorderPane.alignment="CENTER">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ffb81f" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke></Rectangle>
+   </top>
+   <center>
+      <Pane prefHeight="550.0" prefWidth="464.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="177.0" layoutX="129.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../images/login_icon.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="73.0" layoutY="271.0" />
+            <Label alignment="CENTER" layoutX="55.0" layoutY="270.0" prefHeight="40.0" prefWidth="85.0" text="密码: " textFill="#f89406" wrapText="true" />
+            <Button fx:id="signIn" layoutX="226.0" layoutY="376.0" mnemonicParsing="false" onAction="#SignIn" prefHeight="38.0" prefWidth="71.0" text="注册" textFill="#f89406" />
+            <Button fx:id="logIn" layoutX="111.0" layoutY="376.0" mnemonicParsing="false" onAction="#Login" prefHeight="38.0" prefWidth="71.0" text="登录" textFill="#f89406" />
+            <Label alignment="CENTER" layoutX="40.0" layoutY="434.0" prefHeight="36.0" prefWidth="321.0" text="Student Manager Version 1.0" textFill="#f89406" />
+            <TextField fx:id="username" layoutX="140.0" layoutY="214.0" prefHeight="36.0" prefWidth="172.0" />
+            <Label alignment="CENTER" layoutX="49.0" layoutY="320.0" prefHeight="40.0" prefWidth="85.0" text="用户类型:" textFill="#f89406" wrapText="true" />
+            <ChoiceBox fx:id="choiceBox_usertype" layoutX="146.0" layoutY="322.0" onMousePressed="#UserType" prefHeight="36.0" prefWidth="71.0" />
+            <Label alignment="CENTER" layoutX="49.0" layoutY="212.0" prefHeight="40.0" prefWidth="85.0" text="用户名: " textAlignment="CENTER" textFill="#f89406" wrapText="true" />
+            <Label fx:id="warning" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="180.0" prefHeight="24.0" prefWidth="266.0" textFill="#f89406" />
+            <PasswordField fx:id="password" layoutX="141.0" layoutY="272.0" prefHeight="36.0" prefWidth="171.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

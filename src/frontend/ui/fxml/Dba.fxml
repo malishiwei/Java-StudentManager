@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-border-image-source: url('E:/eclipse_workspace/StudentManagerSubmission/images');" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controller.dba.DbaController">
+   <children>
+      <Pane fx:id="pane_Home" layoutX="50.0" layoutY="30.0" prefHeight="570.0" prefWidth="650.0">
+         <children>
+            <Line endX="665.0" layoutY="100.0" />
+            <TextField fx:id="text_slogan" disable="true" layoutX="29.0" layoutY="33.0" onMouseExited="#ExitSlogan" prefHeight="36.0" prefWidth="543.0" promptText="请写下你的座右铭" />
+            <Pane layoutY="100.0" prefHeight="480.0" prefWidth="650.0">
+               <children>
+                  <TitledPane layoutX="52.0" layoutY="32.0" prefHeight="174.0" prefWidth="228.0" text="学习标兵">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" prefHeight="139.0" prefWidth="228.0">
+                                 <items>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="40.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="理科" />
+                                          <Text layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. C189 张三" />
+                                          <Text layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. C188 李四" />
+                                          <Text layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. C188 王五" />
+                                          <Text layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. C190 赵六" />
+                                          <Text layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. C191 田七" />
+                                       </children>
+                                    </Pane>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="40.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="文科" />
+                                          <Text layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. C189 张三" />
+                                          <Text layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. C188 李四" />
+                                          <Text layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. C188 王五" />
+                                          <Text layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. C190 赵六" />
+                                          <Text layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. C191 田七" />
+                                       </children>
+                                    </Pane>
+                                 </items>
+                              </SplitPane>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4fcb2" height="150.0" opacity="0.46" stroke="#a49e9e" strokeType="INSIDE" width="226.0" />
+                           </children>
+                        </Pane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane layoutX="374.0" layoutY="32.0" prefHeight="174.0" prefWidth="228.0" text="通知公告">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextArea editable="false" prefHeight="136.0" prefWidth="228.0" promptText="重要通知" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffaa" height="150.0" opacity="0.5" stroke="#a49e9e" strokeType="INSIDE" width="226.0" />
+                           </children>
+                        </Pane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane layoutX="52.0" layoutY="240.0" prefHeight="174.0" prefWidth="228.0" text="校园新闻">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextArea editable="false" prefHeight="137.0" prefWidth="228.0" promptText="校园新闻" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdf7ea" height="150.0" opacity="0.5" stroke="#a49e9e" strokeType="INSIDE" width="226.0" />
+                           </children>
+                        </Pane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane layoutX="374.0" layoutY="240.0" prefHeight="174.0" prefWidth="228.0" text="学生风采">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextArea editable="false" prefHeight="137.0" prefWidth="228.0" promptText="学生风采" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffeaf7" height="150.0" opacity="0.5" stroke="#a49e9e" strokeType="INSIDE" width="226.0" />
+                           </children>
+                        </Pane>
+                     </content>
+                  </TitledPane>
+               </children>
+            </Pane>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="589.0" layoutY="36.0" onMouseClicked="#EnterSlogan" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/revise.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="pane_Account" layoutX="50.0" layoutY="30.0" prefHeight="570.0" prefWidth="650.0" visible="false">
+         <children>
+            <Line endX="180.0" layoutY="60.0" />
+            <Label layoutX="14.0" layoutY="27.0" text="删除/修改账号" textFill="#573912">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TitledPane animated="false" layoutX="50.0" layoutY="120.0" prefHeight="400.0" prefWidth="550.0">
+               <content>
+                  <ScrollPane layoutX="30.0" layoutY="315.0" prefHeight="230.0" prefWidth="540.0">
+                     <content>
+                        <Pane prefHeight="366.0" prefWidth="552.0">
+                           <children>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="556.0">
+                                 <children>
+                                    <TableView fx:id="tab_Search" prefHeight="368.0" prefWidth="563.0">
+                                       <columns>
+                                          <TableColumn fx:id="col_AccountId" prefWidth="104.0" text="工号/学号" />
+                                          <TableColumn fx:id="col_AccountName" minWidth="0.0" prefWidth="76.0" text="用户名" />
+                                          <TableColumn fx:id="col_AccountUsertype" minWidth="0.0" prefWidth="86.0" text="用户类型" />
+                                          <TableColumn fx:id="col_AccountDelete" minWidth="0.0" prefWidth="129.66665649414062" text="删除账户" />
+                                          <TableColumn fx:id="col_AccountModify" minWidth="0.0" prefWidth="129.66665649414062" text="修改账户" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </Pane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </TitledPane>
+            <ImageView fx:id="image_Search" fitHeight="25.0" fitWidth="25.0" layoutX="280.0" layoutY="75.0" onMouseClicked="#ShowSearchResult" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/search.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="53.0" layoutY="80.0" text="查询用户ID:" />
+            <TextField fx:id="text_SearchId" layoutX="135.0" layoutY="75.0" prefHeight="25.0" prefWidth="125.0" />
+            <Button fx:id="button_SaveSearchResult" layoutX="510.0" layoutY="80.0" mnemonicParsing="false" onMouseClicked="#SaveSearchResult" text="保存" />
+            <Label fx:id="label_warning" layoutX="341.0" layoutY="74.0" prefHeight="24.0" prefWidth="135.0" textFill="#cd3737" visible="false" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Score" layoutX="50.0" layoutY="30.0" prefHeight="570.0" prefWidth="650.0" visible="false">
+         <children>
+            <Line endX="180.0" layoutY="50.0" stroke="#614d3b" />
+            <Pane layoutX="50.0" layoutY="100.0" prefHeight="399.0" prefWidth="550.0">
+               <children>
+                  <TitledPane animated="false" collapsible="false" prefHeight="400.0" prefWidth="549.0" text="统计分析">
+                     <content>
+                        <Accordion maxHeight="1.7976931348623157E308" prefHeight="200.0">
+                          <panes>
+                            <TitledPane fx:id="pane_GradeScore" animated="false" text="年级成绩统计">
+                                 <content>
+                                    <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                       <content>
+                                          <Pane prefHeight="293.0" prefWidth="548.0">
+                                             <children>
+                                                <TableView fx:id="tab_GradeScore" prefHeight="300.0" prefWidth="550.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="col_GradeStatistics" prefWidth="67.66665649414062" />
+                                                    <TableColumn fx:id="col_GradeScore" prefWidth="61.0" text="总分" />
+                                                      <TableColumn fx:id="col_GradeChinese" prefWidth="49.666656494140625" text="语" />
+                                                      <TableColumn fx:id="col_GradeMath" prefWidth="43.333343505859375" text="数" />
+                                                      <TableColumn fx:id="col_GradeEnglish" prefWidth="48.0" text="外" />
+                                                      <TableColumn fx:id="col_GradePhysics" prefWidth="44.0" text="物" />
+                                                      <TableColumn fx:id="col_GradeChemistry" prefWidth="46.0" text="化" />
+                                                      <TableColumn fx:id="col_GradeBiology" prefWidth="50.0" text="生" />
+                                                      <TableColumn fx:id="col_GradePolitics" prefWidth="47.666656494140625" text="政" />
+                                                      <TableColumn fx:id="col_GradeHistory" prefWidth="43.3333740234375" text="史" />
+                                                      <TableColumn fx:id="col_GradeGeology" prefWidth="51.0" text="地" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </Pane>
+                                       </content>
+                                    </ScrollPane>
+                                 </content>
+                            </TitledPane>
+                            <TitledPane fx:id="pane_ClassScore" animated="false" text="班级成绩统计">
+                                 <content>
+                                    <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                       <content>
+                                          <Pane prefHeight="294.0" prefWidth="550.0">
+                                             <children>
+                                                <TableView fx:id="tab_ClassScore" nodeOrientation="LEFT_TO_RIGHT" prefHeight="293.0" prefWidth="550.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="col_Class" prefWidth="90.0">
+                                                         <graphic>
+                                                            <ChoiceBox fx:id="choice_Subject" prefHeight="38.0" prefWidth="90.0" />
+                                                         </graphic></TableColumn>
+                                                      <TableColumn fx:id="col_ClassMean" text="平均分" />
+                                                      <TableColumn fx:id="col_ClassMax" prefWidth="81.0" text="最高分" />
+                                                      <TableColumn fx:id="col_ClassMin" prefWidth="84.0" text="最低分" />
+                                                      <TableColumn fx:id="col_ClassStd" prefWidth="62.0" text="方差" />
+                                                      <TableColumn fx:id="col_ClassCount" prefWidth="149.0" text="  参考人数" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </Pane>
+                                       </content>
+                                    </ScrollPane>
+                                 </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </content>
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TitledPane>
+               </children>
+            </Pane>
+            <Label layoutX="47.0" layoutY="22.0" text="成绩分析" textFill="#614d3b">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="314.0" layoutY="61.0" text="查询考试：" textFill="#614d3b" />
+            <ChoiceBox fx:id="choice_Test" layoutX="395.0" layoutY="55.0" prefHeight="30.0" prefWidth="150.0" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="556.0" layoutY="59.0" onMouseClicked="#ShowScoreAnalysis" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/search.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Duty" layoutX="50.0" layoutY="30.0" prefHeight="570.0" prefWidth="650.0" visible="false">
+         <children>
+            <TabPane prefHeight="570.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="教师出勤">
+                     <content>
+                        <Pane prefHeight="570.0" prefWidth="650.0">
+                           <children>
+                              <Label layoutX="40.0" layoutY="33.0" text="日期:" textFill="#573912" />
+                              <DatePicker fx:id="date_Date" layoutX="90.0" layoutY="27.0" prefHeight="36.0" prefWidth="145.0" />
+                              <ScrollPane layoutX="40.0" layoutY="80.0" prefHeight="400.0" prefWidth="579.0">
+                                 <content>
+                                    <TableView fx:id="tab_Duty" layoutX="200.0" layoutY="200.0" prefHeight="423.0" prefWidth="596.0">
+                                       <columns>
+                                          <TableColumn fx:id="col_TeacherId" editable="false" prefWidth="104.0" text="教师工号" />
+                                          <TableColumn fx:id="col_TeacherName" editable="false" prefWidth="74.0" text="姓名" />
+                                          <TableColumn fx:id="col_TeacherClass" editable="false" prefWidth="87.0" text="分管班级" />
+                                          <TableColumn fx:id="col_Morning" editable="false" prefWidth="55.0" text="早" />
+                                          <TableColumn fx:id="col_Noon" editable="false" prefWidth="52.0" text="中" />
+                                          <TableColumn fx:id="col_Evening" editable="false" prefWidth="55.0" text="晚" />
+                                          <TableColumn fx:id="col_Note" editable="false" prefWidth="147.0" text="备注" />
+                                       </columns>
+                                    </TableView>
+                                 </content>
+                              </ScrollPane>
+                              <Button fx:id="button_SubmitDuty" layoutX="523.0" layoutY="36.0" mnemonicParsing="false" onMouseClicked="#SubmitTeacherDuty" text="提交记录" />
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="256.0" layoutY="32.0" onMouseClicked="#ShowTeacherDuty" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../images/search.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </content>
+                </Tab>
+                <Tab text="学生出勤">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="568.0" layoutY="26.0" onMouseClicked="#ShowStudentDuty" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../images/search.jpg" />
+                                 </image>
+                              </ImageView>
+                              <DatePicker fx:id="date_StuDate" layoutX="401.0" layoutY="21.0" prefHeight="36.0" prefWidth="145.0" />
+                              <Label layoutX="346.0" layoutY="27.0" text="日期:" textFill="#573912" />
+                              <TableView fx:id="tab_StudentDuty" layoutX="40.0" layoutY="70.0" prefHeight="400.0" prefWidth="558.0">
+                                <columns>
+                                  <TableColumn fx:id="col_StuClass" prefWidth="75.0" text="班级" />
+                                  <TableColumn fx:id="col_StuId" prefWidth="75.0" text="学号" />
+                                    <TableColumn fx:id="col_StuName" prefWidth="75.0" text="姓名" />
+                                    <TableColumn fx:id="col_StuDuty" prefWidth="121.0" text="出勤记录" />
+                                    <TableColumn fx:id="col_StuReason" prefWidth="211.0" text="事由" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                     </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children></Pane>
+      <Pane fx:id="pane_Feedback" layoutX="50.0" layoutY="30.0" prefHeight="570.0" prefWidth="650.0" visible="false">
+         <children>
+            <Line endX="180.0" layoutY="60.0" stroke="#72552b" />
+            <Label layoutX="44.0" layoutY="26.0" text="反馈信箱">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TitledPane fx:id="tab_Letters" expanded="false" layoutX="37.0" layoutY="85.0" prefHeight="385.0" prefWidth="558.0" text="学生来信">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="541.0">
+                     <children>
+                        <ScrollPane prefHeight="361.0" prefWidth="551.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="378.0" prefWidth="573.0">
+                                 <children>
+                                    <Accordion fx:id="pane_Letter" prefHeight="373.0" prefWidth="540.0" />
+                                 </children></AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <ImageView fx:id="image_letter" fitHeight="30.0" fitWidth="30.0" layoutX="565.0" layoutY="46.0" onMouseClicked="#ShowLetters" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/reflection.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffe5b3" height="30.0" strokeType="INSIDE" width="710.0">
+         <stroke>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </stroke>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#433e3e" height="600.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <ImageView fx:id="image_home" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/home.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_exit" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/exit.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_duty" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/modify.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image_profile" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/account.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/scores.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="8.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/letter.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_home" layoutY="65.0" mnemonicParsing="false" onMouseClicked="#HomeWindow" onMouseEntered="#EnterHome" onMouseExited="#ExitHome" opacity="0.0" prefHeight="50.0" prefWidth="50.0" textFill="#433e3e" />
+      <Button fx:id="button_account" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#AccountWindow" onMouseEntered="#EnterAccount" onMouseExited="#ExitAccount" opacity="0.0" prefHeight="50.0" prefWidth="50.0" textFill="#433e3e" />
+      <Button fx:id="button_score" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#ScoreWindow" onMouseEntered="#EnterScore" onMouseExited="#ExitScore" opacity="0.0" prefHeight="50.0" prefWidth="50.0" textFill="#433e3e" />
+      <Button fx:id="button_duty" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#DutyWindow" onMouseEntered="#EnterDuty" onMouseExited="#ExitDuty" opacity="0.0" prefHeight="50.0" prefWidth="50.0" textFill="#433e3e" />
+      <Button fx:id="button_exit" layoutY="540.0" mnemonicParsing="false" onAction="#ExitWindow" onMouseEntered="#EnterExit" onMouseExited="#ExitExit" opacity="0.0" prefHeight="50.0" prefWidth="50.0" textFill="#433e3e" />
+      <Label layoutX="10.0" layoutY="2.0" text="Student Manager ——管理员端" textFill="#7c6666">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_feedback" layoutY="370.0" mnemonicParsing="false" onMouseClicked="#FeedbackWindow" onMouseEntered="#EnterFeedback" onMouseExited="#ExitFeedback" opacity="0.0" prefHeight="50.0" prefWidth="50.0" textFill="#433e3e" />
+   </children>
+</Pane>
